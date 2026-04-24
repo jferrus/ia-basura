@@ -25,7 +25,9 @@ El sistema analiza las imágenes y las clasifica en una de las 6 categorías del
 ## 📂 Estructura del Proyecto
 
 * `ia_basura.py`: Script principal de Python para cargar el modelo y procesar imágenes.
-* `garbage_classifier.pth`: Pesos del modelo entrenado (formato PyTorch).
+* `ia_basura2.py`: Otro script principal de Python para cargar el modelo y procesar imágenes.
+* `generar_modelo_basura.pth`: Script para entrenar el modelo con PyTorch.
+* `generar_modelo_basura2.pth`: Script para entrenar otro modelo con PyTorch.
 * `imagenes/`: Carpeta para guardar imágenes de prueba.
 * `requirements.txt`: Lista de librerías necesarias para la ejecución.
 * `README.md`: Documentación del proyecto.
@@ -46,11 +48,21 @@ Instala las librerías necesarias mediante el archivo de requisitos:
 ```bash
 pip install -r requirements.txt
 ```
-### 3. Realizar una Clasificación
+### 3. Entrenar el modelo
+El modelo 2 es más complejo, tarda más en generarse y es más exacto. Para entrenar el modelo:
+```bash
+python generar_modelo_basura.py
+o
+python generar_modelo_basura2.py
+
+```
+### 4. Realizar una Clasificación
 
 Para ejecutar la IA sobre una imagen específica, utiliza el siguiente comando:
 ```bash
 python ia_basura.py
+o
+python ia_basura2.py
 ```
 Una vez se ejecuta puedes poner el nombre de una imagen del directorio /imagenes de este proyecto sin la extensión, que tiene que ser .jpg de forma obligatoria.
 
