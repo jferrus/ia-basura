@@ -26,6 +26,7 @@ El sistema analiza las imágenes y las clasifica en una de las 6 categorías del
 
 * `ia_basura.py`: Script principal de Python para cargar el modelo y procesar imágenes.
 * `ia_basura2.py`: Otro script principal de Python para cargar el modelo y procesar imágenes.
+* `garbage_classifier.pth`: Pesos del modelo ligero entrenado (formato PyTorch).
 * `generar_modelo_basura.pth`: Script para entrenar el modelo con PyTorch.
 * `generar_modelo_basura2.pth`: Script para entrenar otro modelo con PyTorch.
 * `imagenes/`: Carpeta para guardar imágenes de prueba.
